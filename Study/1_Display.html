@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display 속성</title>
+    <style>
+
+        /*
+
+            display: none 
+            
+            - 태크요소를 브라우저 화면에서 제거 , 자리 공간까지 없앤다 
+            
+            - visivility : hidden은 자리공간 남음(opacity: 0)
+            
+            
+            display: block  ex) h1~h5/p/table/div/section.article  => Vertical
+            
+            - inline 태그를 block 태그로 변환 
+            
+            - 태그 출력방향 세로 방향, Width/Height 크기 적용 가능 
+
+            display: inline ex) a, span, i, em, strong  =>  Horizontal
+
+            - block 태그를 inline 태그로 변환 
+
+            - 태그 출력방향 가로 방향, Width/Height 크기 적용 불가능
+
+            display: inline-block  ex) img, input... 
+        
+            - inline, block 태그를 inline-block으로 변환 
+            
+            - 태그 출력방향은 가로 방향, Width/Height 크기 적용 가능
+
+        */
+
+        .box1 > span:nth-child(1){
+            visibility: hidden; /* 자리공간은 남아 있다.*/
+        }
+        .box1 > span:nth-child(2){
+            display: none;
+        }
+        .box1 > span:nth-child(3){opacity: 0.2;}
+        .box2 > span{
+            border: 1px solid yellow;
+        }
+        .box2 > span:nth-child(2) {display: block}
+        .box3 > *{
+            border: 1px solid orange;
+        }
+        .box3 > div{
+            display: inline;
+        }
+        .box4 > *{
+            border: 1px solid pink;
+        }
+
+        .box4 > div{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>display 속성</h3>
+    <h4>display:none</h4>
+    <div class="box1">
+        <span>TEXT1</span>
+        <span>TEXT2</span>
+        <span>TEXT3</span>
+    </div>
+    
+    <h4>display:block</h4>
+    <div class="box2">
+        <span>TEXT1</span>
+        <span>TEXT2</span>
+        <span>TEXT3</span>
+    </div>
+    <h4>display:inline</h4>
+    <div class="box3">
+        <span>TEXT1</span>
+        <div>TEXT2</div>
+        <span>TEXT3</span>
+    </div>
+    <h4>display:inline-block</h4>
+    <div class="box4">
+        <span>TEXT1</span>
+        <div>TEXT2</div>
+        <span>TEXT3</span>
+    </div>
+</body>
+</html>
