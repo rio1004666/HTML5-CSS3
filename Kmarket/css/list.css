@@ -1,0 +1,429 @@
+/* 초기화 */
+        
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '고딕';
+}
+
+ul,ol {list-style:none;}
+
+a{text-decoration: none; color:#111;}
+
+#wrapper{
+    width: 100%;
+    height: auto;
+}
+
+/*헤더영역*/
+
+header{
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+    box-sizing: border-box;
+
+}
+
+header > div{
+    width: 100%;
+}
+header > .top{
+    height: 35px;
+}
+
+header > .top > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: right; /* 오른쪽으로 텍스트들을 정렬시킨다. */
+}
+
+header > .top > div > a  {
+    display: inline-block; /* 인라인속성인 수평정렬과 블럭속성인 크기값을 가질 수 있는 속성으로 가진다. */
+    height: 100%;
+    padding: 0 10px; /* 위아래 / 좌우 */
+    line-height: 33px;
+    border-left: 1px solid #e9e9e9;
+    color: #646464;
+}
+header > .top > div > a:last-child {
+    border-right: 1px solid #e9e9e9;
+}
+header > .top > div > a:hover {
+    color: #333;
+    border-bottom: 1px solid #444;
+}
+header > .logo{
+    height: 115px;
+}
+header > .logo > div{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+header > .logo > div > a {
+    display: block;
+    margin-top: 30px;
+
+}
+header > .logo > div > form {
+    display: block;
+    margin-left: 420px;
+    margin-top: -40px;
+}
+
+header > .logo > div > form > input[name=search]{
+    width: 340px;
+    height: 35px;
+}
+header > .logo > div > form > #btn_search{
+    width: 50px;
+    height: 39px;
+}
+header > .menu{
+    height: 46px;
+    
+}
+header > .menu > div{
+    border: 1px solid blue;
+    
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fcfafa;
+    
+}
+header > .menu > div > .product_menu{
+    float: left;
+    margin-top: 8px;
+    margin-left: 80px;
+}
+header > .menu > div > .product_menu > li {
+    float: left;
+    padding: 10px;
+}
+header > .menu > div > .community_menu{
+    float: right;
+    margin-top: 8px;
+    margin-right: 80px;
+}
+header > .menu > div > .community_menu > li{
+    float: left;
+    padding: 10px;
+
+}
+/*메인영역*/
+main{
+    
+}
+main > .top_menu{
+    float: left;
+    
+    margin-left: 358px;
+    width: 200px;
+    height: 500px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    
+}
+main > .top_menu > .aside_menu{
+    width: 200px;
+    height: 100%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    background: #333949;
+}
+
+
+main > .top_menu > .aside_menu > ul > li{
+    border: 1px solid white;
+    box-sizing: border-box;
+    background: #333949;
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+}
+main > .top_menu > .aside_menu > ul > li:nth-child(1) > span{
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+main > .top_menu > .aside_menu  > ul > li > a {
+    color: white;
+    font-size: 16px;
+    margin-left: 8px;
+
+}
+main > .top_menu > .aside_menu  > ul > li > ul{
+        display: none;
+
+}
+main > .top_menu > .aside_menu  > ul > li:hover ul {
+    display: block;
+} 
+
+main > .top_menu > .fashion {
+    display: inline-block;
+    border: 3px solid black;
+    width: 100px;
+    height: 100%;
+    
+
+}
+main > .top_menu > .event_image{
+    
+    float:right;
+    width: 990px;
+    height: 100%;
+    border: 1px solid orange;
+    
+    
+}
+main > .top_menu > .event_image > img{
+    display: inline;
+    width: 100%;
+    height: 100%;
+
+}
+/* main_list*/
+main > .man_clothes_list{
+    width: 1000px;
+    margin-left: 560px;
+
+}
+main > .man_clothes_list > .man_clothes_header{
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+main > .man_clothes_list > .man_clothes_header > #man_list_title{
+    
+    font-size: 18px;
+    font-weight: bolder;
+}
+main > .man_clothes_list > .man_clothes_header > #man_list_path{
+    padding-bottom: 10px;
+    text-align: right;            
+}
+main > .man_clothes_list > .man_clothes_header > hr{
+    margin-top: 15px;
+}
+main > .man_clothes_list > .man_clothes_header > ul {
+    margin-top: 10px;
+
+
+}
+main > .man_clothes_list > .man_clothes_header > ul > li{
+    float: left;
+    border-right: 1px solid blanchedalmond;
+    padding: 5px;
+}
+main > .man_clothes_list > .man_clothes_body{
+    width: 990px;
+    margin-left: 10px;
+    height: auto;
+    
+
+}
+main > .man_clothes_list > .man_clothes_body > .man_item01{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .man_item02{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .man_item03{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .man_item04{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .man_item05{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .man_item06{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .man_item07{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .man_item08{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .man_item09{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .man_item10{
+    width: 100%;
+    height: 200px;
+    
+}
+main > .man_clothes_list > .man_clothes_body img{
+    width: 200px;
+    height: 200px;
+}
+main > .man_clothes_list > .man_clothes_body > div{
+    position: relative;
+}
+main > .man_clothes_list > .man_clothes_body > div > .item_name{
+    font-size: 18px;
+    font-weight: bolder;
+    position: absolute;
+    top: 40px;
+    
+}
+main > .man_clothes_list > .man_clothes_body > div > .item_subname{
+    position: absolute;
+    top: 70px;
+
+}
+main > .man_clothes_list > .man_clothes_body > div > .item_price{
+    font-size: 16px;
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    
+
+}
+main > .man_clothes_list > .man_clothes_body > div > .item_discount{
+    position: absolute;
+    top: 70px;
+    left: 600px;
+    text-decoration: line-through;
+    font-weight: 100;
+}
+
+main > .man_clothes_list > .man_clothes_body > div > #free{
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    left: 600px;
+    width: 55px;
+    height: 13px;
+
+}
+main > .man_clothes_list > .man_clothes_body > div > .item_percent {
+    display: inline-block;
+    position: absolute;
+    top: 72px;
+    left: 655px;
+    width: 55px;
+    height: 13px;
+    font-size: 10px;
+    color: red;
+}
+main > .man_clothes_list > .man_clothes_body > div > .item_percent {
+    display: inline-block;
+    position: absolute;
+    top: 72px;
+    left: 655px;
+    width: 55px;
+    height: 13px;
+    font-size: 10px;
+    color: red;
+}
+main > .man_clothes_list > .man_clothes_body > div > .dealer_name{
+    position: absolute;
+    top: 50px;
+    right: 140px;
+}
+main > .man_clothes_list > .man_clothes_body > div:nth-child(1) > .dealer_name{
+    position: absolute;
+    top: 50px;
+    right: 165px;
+}
+main > .man_clothes_list > .man_clothes_body > div > #power{
+    display: inline-block;
+    position: absolute;
+    top: 75px;
+    right: 170px;
+    width: 55px;
+    height: 13px;
+
+}
+main > .man_clothes_list > .man_clothes_body > div > #great{
+    display: inline-block;
+    position: absolute;
+    top: 75px;
+    right: 105px;
+    width: 57px;
+    height: 17px;
+
+}
+main > .man_clothes_list > .man_clothes_body > div > .item_star > span{
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    right: 170px;
+    width: 55px;
+    height: 13px;
+
+}
+main > .man_clothes_list > .man_clothes_body > div > .item_star > #star{
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    width: 55px;
+    height: 13px;
+
+}
+main > .man_clothes_list > .man_clothes_body > .page_btns{
+    width: 400px;
+    height: 30px;
+    
+    margin: 30px auto;
+    
+}
+main > .man_clothes_list > .man_clothes_body > .page_btns > #prev{
+    display: inline-block;
+    width: 45px;
+    position: absolute;
+    
+    
+}
+main > .man_clothes_list > .man_clothes_body > .page_btns > #next{
+    display: inline-block;
+    width: 45px;
+    position: absolute;
+    right: 0;
+    
+    
+}
+main > .man_clothes_list > .man_clothes_body > .page_btns > ul {
+    position: absolute;
+    right: 60px;
+    bottom: 1px;
+    
+    
+}
+main > .man_clothes_list > .man_clothes_body > .page_btns > ul > li  {
+    float: left;
+    padding: 5px;
+}
+main > .man_clothes_list > .man_clothes_body > .page_btns > ul > li > button {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+/*푸터영역*/
